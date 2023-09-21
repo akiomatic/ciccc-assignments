@@ -23,9 +23,7 @@ const degree = ["A", "B", "C", "D", "E"];
 const totalScore = [];
 
 function calculateTotalScore() {
-    for (let student of students) {
-        totalScore.push(student.score1 + student.score2);
-    }
+    students.forEach((student) => totalScore.push(student.score1 + student.score2));
 }
 
 function outputResult() {
