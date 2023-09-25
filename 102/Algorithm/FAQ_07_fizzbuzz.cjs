@@ -21,7 +21,11 @@
  *
  */
 
-// The implementation
+
+
+// <1> Frequent asked interview question <!> //
+
+
 function fizzBuzz(num) {
     let result = "";
 
