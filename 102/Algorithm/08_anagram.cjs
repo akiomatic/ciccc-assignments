@@ -21,10 +21,12 @@
 
 // The implementation
 function anagramFn(str1, str2) {
-    str1 = str1.toLowerCase().replace(/[\.,?!]/, "").split("").sort();
-    str2 = str2.toLowerCase().replace(/[\.,?!]/, "").split("").sort();
 
-    return str1.length === str2.length ? str1.every((e, i) => e === str2[i]) : false;
+    const sort = (str) => {
+        return str.toLowerCase().replaceAll(/[^a-z0-9]/g, "").split("").sort().join("");
+    }
+
+    return sort(str1) === sort(str2);
 }
 
 

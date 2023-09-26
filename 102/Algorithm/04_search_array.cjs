@@ -17,11 +17,10 @@
 
 // The implementation
 function searchArray(arr, target) {
-    return arr.filter(e => e === target).length !== 0;
+    return arr.includes(target);
+
+    // return arr.indexOf(target) !== -1;
 }
-
-
-
 
 
 
